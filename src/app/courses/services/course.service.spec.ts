@@ -42,7 +42,7 @@ describe("CoursesService", () => {
     });
   });
 
-  it('Should find a course by id', () => {
+  it('Should test saveCourses', () => {
     const changes: Partial<Course> = { titles: { description: 'Testing Course' } }
     coursesService.saveCourse(12, changes).subscribe(course => {
       expect(course.id).toBe(12, "incorrect id of courses");
